@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+
+  /* MAIN THEME COLORS */
+
+  --color-darkBlue: #212632;
+  --color-tailwindBlue: #101828;
+  --color-tailwindBlueNavigation: #172130;
+  --color-tailwindBorder: #2F3845;
+
+  /* CLASS COLORS */
+
+  --color-classDeathKnight: #C41E3A;
+  --color-classDemonHunter: #A330C9;
+  --color-classDruid: #FF7C0A;
+  --color-classEvoker: #33937F;
+  --color-classHunter: #AAD372;
+  --color-classMage: #3FC7EB;
+  --color-classMonk: #00FF98;
+  --color-classPaladin: #F48CBA;
+  --color-classPriest: #FFFFFF;
+  --color-classRogue: #FFF468;
+  --color-classShaman: #0070DD;
+  --color-classWarlock: #8788EE;
+  --color-classWarrior: #C69B6D;
+
+  /* QUALITY COLORS */
+
+  --color-qualityPoor: #9d9d9d;
+  --color-qualityCommon: #FFFFFF;
+  --color-qualityUncommon: #1EFF00;
+  --color-qualityRare: #0070DD;
+  --color-qualityEpic: #A335EE;
+  --color-qualityLegendary: #FF8000;
+  --color-qualityArtifact: #E6CC80;
+  --color-qualityHeirloom: #00CCFF;
+  }
+
+  /* CUSTOM CSS CLASSES */
+
+  .heirloom-button-style {
+    @apply mx-3 my-2 py-2 p-3
+           font-semibold text-lg
+           bg-qualityHeirloom/75 hover:bg-sky-500/50
+           rounded-sm
+           transition duration-300;
+  }
+
+  .legendary-button-style {
+    @apply mx-3 my-2 py-2 p-3
+           font-semibold text-lg
+           bg-qualityLegendary/75 hover:bg-orange-500/50
+           rounded-sm
+           transition duration-300;
+  }
+
+  .epic-button-style {
+    @apply mx-3 my-2 py-2 p-3
+           font-semibold text-lg
+           bg-qualityEpic/75 hover:bg-purple-500/50
+           rounded-sm
+           transition duration-300;
+  }
+
+  .rare-button-style {
+    @apply mx-3 my-2 py-2 p-3
+           font-semibold text-lg
+           bg-qualityRare/75 hover:bg-blue-500/50
+           rounded-sm
+           transition duration-300;
+  }
+
+  .uncommon-button-style {
+    @apply mx-3 my-2 py-2 p-3
+           font-semibold text-lg
+           bg-qualityUncommon/75 hover:bg-green-500/50
+           rounded-sm
+           transition duration-300;
+  }
+
+  .common-button-style {
+    @apply mx-3 my-2 py-2 p-3
+           font-semibold text-lg
+           bg-qualityCommon/75 hover:bg-stone-500/50
+           rounded-sm
+           transition duration-300;
+  }
+
+  .heirloom-button-border-style {
+    @apply mx-3 my-2 py-2 px-3
+           font-semibold text-lg
+           hover:bg-gray-500/20
+           rounded-lg
+           border-2 hover:border-2
+           border-qualityHeirloom/0 hover:border-qualityHeirloom
+  }
+
+  .custom-legendary-gear-slot {
+    @apply ml-45 mt-8
+           border-2 rounded-sm
+         bg-qualityLegendary/50 border-qualityLegendary
+           w-12 h-12
+           text-center place-content-end
+  }
+
+  .custom-epic-gear-slot {
+    @apply mt-8 ml-0.5
+           w-12 h-12
+          text-center place-content-end
+          bg-qualityEpic/50 border-qualityEpic
+          border-2 rounded-sm
+  }
+
+  /* CUSTOM CSS CLASSES ENDS*/
+
+body {
+  background-color: #101828;
+  color: white;
+}
