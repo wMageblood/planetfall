@@ -83,7 +83,6 @@ const PokemonFetcher = () => {
             special_attack_stat={properties.stats[3]?.base_stat}
             defense_stat={properties.stats[2]?.base_stat}
             special_defense_stat={properties.stats[4]?.base_stat}
-            weight={properties.weight}
           />
         </div>
       </div>
