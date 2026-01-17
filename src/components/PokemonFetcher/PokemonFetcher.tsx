@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import DetailedCharacterCard from "../DetailedCharacterCard/DetailedCharacterCard";
+import WikiPokemonCard from "../WikiPokemonCard/WikiPokemonCard"
 
 //set a pikachu as default
 
@@ -71,18 +72,12 @@ const PokemonFetcher = () => {
           <input placeholder={'Insert Pokemon'} className={'bg-slate-800/90 ml-2 p-2 rounded-sm'} ref={valRef} />
         </div>
         <div>
-          <DetailedCharacterCard
-            type={properties.types[0]?.type.name}
-            id={properties.id}
-            secondAbility={properties.abilities[1]?.ability.name}
-            firstAbility={properties.abilities[0].ability.name}
-            name={properties.name}
-            sprite={properties.sprites.other["official-artwork"].front_default}
-            hp_stat={properties.stats[0]?.base_stat}
-            attack_stat={properties.stats[1]?.base_stat}
-            special_attack_stat={properties.stats[3]?.base_stat}
-            defense_stat={properties.stats[2]?.base_stat}
-            special_defense_stat={properties.stats[4]?.base_stat}
+          <WikiPokemonCard
+            sprite={`${properties.sprites.other["official-artwork"].front_default}`}
+            type={`${properties.types[0].type.name}`}
+            weight={properties.weight}
+            height={properties.height}
+            abilities={properties.abilities[0].ability.name}
           />
         </div>
       </div>

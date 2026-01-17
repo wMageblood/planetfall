@@ -55,17 +55,3 @@ const DetailedCharacterCard = (Pokemon: PokemonInformation) => {
 }
 
 export default DetailedCharacterCard
-
-/*
-table for each type of colors:
-  1. NORMAL   10. FLYING
-  2. FIRE     11. PSYCHICH
-  3. WATER    12. BUG
-  4. ELECTRIC 13. ROCK
-  5. GRASS    14. GHOST
-  6. ICE      15. DRAGON
-  7. FIGHTING 16. DARK
-  8. POISON   17. STEEL
-  9. GROUND   18. FAIRY
-       19. STELLAR
-*/
