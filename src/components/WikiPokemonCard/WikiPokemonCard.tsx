@@ -1,4 +1,5 @@
 import backGroundColor from "../../constants/pokemonTypes";
+import pokemonWeaknessesTwo from "../../constants/pokemonWeaknesses";
 
 type PokemonData = {
   name?: string | number;
@@ -21,23 +22,38 @@ const WikiPokemonCard = (data: PokemonData) => {
   const upperCaseFirstLetter = (letter: string) => letter.slice(0, 1).toUpperCase() + letter.slice(1); //uppercase first letter of the ability
 
   return (
-    <div className={`flex w-full bg-red-500 rounded-sm`}>
-      <div className={`w-3xl`}>
-        <img alt={`${data.name}`} src={`${data.sprite}`} />
-      </div>
-      <div className={`font-semibold text-xl bg-amber-600`}>
-        <p className={`mt-2 ml-2 mb-2`}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam dolor accusantium architecto exercitationem ullam sequi mollitia necessitatibus, quod iure eligendi quae saepe incidunt numquam quas est? Minima cupiditate ab perspiciatis?
-        </p>
-        <div className={`grid grid-cols-2 w-lg ml-2 my-10`}>
-          <p> Height:  {`${data.height / 10}m (${heightConverter(data.height)}ft)`}</p>
-          <p> Weight:  {`${data.weight / 10}kg (${weightConverter(data.weight)}lbs)`}</p>
-          <p> Ability: {`${upperCaseFirstLetter(data.abilities)}`}</p>
-          <p> Gender: Unknown</p>
-          <p> Category: Generic</p>
+    <div className={`mx-4`}>
+      <div className={`flex w-full rounded-sm bg-tailwindBlueNavigation p-4`}>
+        <div className={`w-3xl`}>
+          <img alt={`${data.name}`} src={`${data.sprite}`} />
         </div>
-        <div className={`ml-2`}>
-          Type: <button className={`${backGroundColor(`${data.type}`)} ml-2 px-3 py-1 rounded-sm ring-2`}>{upperCaseFirstLetter(data.type)}</button>
+        <div className={`font-semibold text-xl`}>
+          <p className={`mt-2 ml-2 mb-2 text-gray-200`}>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam dolor accusantium architecto exercitationem ullam sequi mollitia necessitatibus, quod iure eligendi quae saepe incidunt numquam quas est? Minima cupiditate ab perspiciatis?
+          </p>
+          <div className={`grid grid-cols-2 w-lg ml-2 my-10`}>
+            <p className={`font-normal text-gray-300`}>Height:</p>
+            <p className={`font-normal text-gray-300`}>Weight:</p>
+            <p>{`${data.height / 10}m (${heightConverter(data.height)}ft)`}</p>
+            <p className={`mb-6`}>{`${data.weight / 10}kg (${weightConverter(data.weight)}lbs)`}</p>
+            <p className={`font-normal text-gray-300`}> Ability:</p>
+            <p className={`font-normal text-gray-300`}> Gender:</p>
+            <p className={`mb-6`}>{`${upperCaseFirstLetter(data.abilities)}`}</p>
+            <p className={``}>Unknown</p>
+            <p className={`font-normal text-gray-300`}>Category:</p>
+            <span></span>
+            <p className={``}>Generic</p>
+          </div>
+          <div className={`ml-2 mb-6`}>
+            <span className={`font-normal text-gray-300`}>Type: </span><button className={`${backGroundColor(data.type)} ml-2 px-3 py-1 rounded-sm ring-2`}>{upperCaseFirstLetter(data.type)}</button>
+          </div>
+          <div className={`m-2`}>
+
+            <span className={`font-normal text-gray-300`}>Weaknesses: </span> <div> {pokemonWeaknessesTwo(data.type).map((x) =>
+              <button className={`${backGroundColor(x)} ml-2 px-3 py-1 rounded-sm ring-2`}>{x}</button>)}
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -45,3 +61,12 @@ const WikiPokemonCard = (data: PokemonData) => {
 }
 
 export default WikiPokemonCard
+
+
+/*
+        <div className="relative flex py-5 items-center">
+          <div className="grow border-t border-gray-400"></div>
+            <span className="shrink mx-4 text-gray-400">Content</span>
+          <div className="grow border-t border-gray-400"></div>
+        </div>
+*/

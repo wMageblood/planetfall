@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import DetailedCharacterCard from "../DetailedCharacterCard/DetailedCharacterCard";
 import WikiPokemonCard from "../WikiPokemonCard/WikiPokemonCard"
 
-//set a pikachu as default
+//set a pokemon #1 as default
 
 const pokemonProperties = {
   name: '',
