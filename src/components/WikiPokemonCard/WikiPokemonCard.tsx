@@ -47,10 +47,9 @@ const WikiPokemonCard = (data: PokemonData) => {
           <div className={`ml-2 mb-6`}>
             <span className={`font-normal text-gray-300`}>Type: </span><button className={`${backGroundColor(data.type)} ml-2 px-3 py-1 rounded-sm ring-2`}>{upperCaseFirstLetter(data.type)}</button>
           </div>
-          <div className={`m-2`}>
-
-            <span className={`font-normal text-gray-300`}>Weaknesses: </span> <div> {pokemonWeaknessesTwo(data.type).map((x) =>
-              <button className={`${backGroundColor(x)} ml-2 px-3 py-1 rounded-sm ring-2`}>{x}</button>)}
+          <div className={`m-2 flex`}>
+            <span className={`font-normal text-gray-300 mr-2`}>Weaknesses: </span> <div> {pokemonWeaknessesTwo(data.type).map((x) =>
+              <button className={`${backGroundColor(x)} ml-2 px-3 py-1 rounded-sm ring-2`}>{x.toUpperCase()}</button>)}
             </div>
 
           </div>

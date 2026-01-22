@@ -1,42 +1,16 @@
-import { useState, useRef } from "react";
-import DetailedCharacterCard from "../DetailedCharacterCard/DetailedCharacterCard";
+import { useState, useRef, useEffect } from "react";
 import WikiPokemonCard from "../WikiPokemonCard/WikiPokemonCard"
-
-//set a pokemon #1 as default
 
 const pokemonProperties = {
   name: '',
   id: '',
   height: '',
-  sprites: {
-    other: {
-      "official-artwork": {
-        front_default: ''
-      }
-    }
-  },
+  sprites: { other: { "official-artwork": { front_default: '' } } },
   species: { name: '' },
-  abilities: [
-    {
-      ability: {
-        name: '',
-      },
-    },
-  ],
-  types: [
-    {
-      type: {
-        name: ''
-      }
-    }
-  ],
-  stats: [
-    {
-      base_stat: '',
-    }
-  ],
+  abilities: [{ ability: { name: '', }, },],
+  types: [{ type: { name: '' } }],
+  stats: [{ base_stat: '', }],
   weight: '',
-
 };
 
 const PokemonFetcher = () => {
@@ -44,9 +18,7 @@ const PokemonFetcher = () => {
   const [properties, setProperties] = useState(pokemonProperties);
   const valRef = useRef<HTMLInputElement | null>(null);
 
-  const handleClick = async () => {
-
-    const pokemon = valRef.current!.value;
+  const fetchPokemon = async (pokemon: string) => {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
 
     try {
@@ -55,13 +27,20 @@ const PokemonFetcher = () => {
       }
 
       const data = await response.json();
-
       setProperties(data)
 
     } catch (error) {
       console.log(error);
     }
+  };
 
+  useEffect(() => {
+    fetchPokemon('pikachu');
+  }, []);
+
+  const handleClick = async () => {
+    const pokemon = valRef.current!.value;
+    fetchPokemon(pokemon);
   };
 
   return (
