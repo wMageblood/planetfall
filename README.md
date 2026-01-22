@@ -7,6 +7,7 @@ __POKEVIEWER__ fue creado con la intencion de aprender a utilizar APIs. Consta d
 2. Cambiar los colores de la pagina.
 3. Descripcion por cada Pokemon.
 4. Poner tildes al __README__. ⚠️
+5. ~~Crear rutas para cada componente.~~
 
 Este proyecto tiene fecha de terminacion para el __23/01/2026__, posteriormente no sera mas actualizado.
 

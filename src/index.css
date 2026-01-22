@@ -60,6 +60,7 @@
 
   /* POKEMON TYPE COLORS ENDS */
 
+  --color-pokedexGray: #a4a4a4;
   }
 
 
@@ -136,6 +137,22 @@
           text-center place-content-end
           bg-qualityEpic/50 border-qualityEpic
           border-2 rounded-sm
+  }
+
+  .left-button {
+    @apply transition
+           duration-300
+           hover:bg-qualityHeirloom
+           bg-pokedexGray
+           [clip-path:polygon(50%_0%,100%_0,100%_30%,50%_30%,50%_50%,0_50%,0_0)]
+  }
+
+  .right-button {
+    @apply transition
+           duration-300
+           hover:bg-qualityHeirloom
+           bg-pokedexGray
+           [clip-path:polygon(50%_0%,100%_0,100%_50%,50%_50%,50%_30%,0_30%,0_0)]
   }
 
   /* CUSTOM CSS CLASSES ENDS*/

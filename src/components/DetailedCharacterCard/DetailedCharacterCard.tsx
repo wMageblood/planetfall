@@ -18,8 +18,6 @@ interface PokemonInformation {
 //can refactor this as multiple interfaces i.e: interface PokemonStat { hp_stat: string; defense_stat?: string;}
 //same for abilities interface PokemonAbilities {firstAbility?: string; secondAbility?: string; } [...]
 
-//ive the feeling that using type would be much easier
-
 const DetailedCharacterCard = (Pokemon: PokemonInformation) => {
 
   const thirdAbility = Pokemon.thirdAbility === undefined;
