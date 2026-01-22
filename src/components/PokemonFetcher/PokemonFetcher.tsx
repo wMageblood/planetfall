@@ -35,7 +35,7 @@ const PokemonFetcher = () => {
   };
 
   useEffect(() => {
-    fetchPokemon('pikachu');
+    fetchPokemon('mewtwo');
   }, []);
 
   const handleClick = async () => {
