@@ -7,7 +7,6 @@ const PokemonDetail = () => {
 
   return (
     <div>
-      <ElementoDos />
       <p>Showing {pokemonName}</p>
     </div>
   )
