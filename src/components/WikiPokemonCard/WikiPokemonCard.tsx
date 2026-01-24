@@ -1,8 +1,9 @@
 import backGroundColor from "../../constants/pokemonTypes";
 import pokemonWeaknessesTwo from "../../constants/pokemonWeaknesses";
+import firstGenPokemonList from "../../constants/firstGenPokemonsList";
 
 type PokemonData = {
-  name?: string | number;
+  name?: string | any;
   id?: number;
   briefDescription?: string | null;
   weight?: number | any;
@@ -28,8 +29,9 @@ const WikiPokemonCard = (data: PokemonData) => {
           <img alt={`${data.name}`} src={`${data.sprite}`} />
         </div>
         <div className={`font-semibold text-xl`}>
+          <p className={`ml-2 uppercase font-bold text-2xl tracking-tighter`}>{`${data.name} #${data.id}`}</p>
           <p className={`mt-2 ml-2 mb-2 text-gray-200`}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam dolor accusantium architecto exercitationem ullam sequi mollitia necessitatibus, quod iure eligendi quae saepe incidunt numquam quas est? Minima cupiditate ab perspiciatis?
+            {firstGenPokemonList.map(({ name, number, description }) => (<p></p>))}
           </p>
           <div className={`grid grid-cols-2 w-lg ml-2 my-10`}>
             <p className={`font-normal text-gray-300`}>Height:</p>
