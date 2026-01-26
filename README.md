@@ -10,7 +10,7 @@ __POKEVIEWER__ fue creado con la intencion de aprender a utilizar APIs. Consta d
 5. ~~Crear rutas para cada componente.~~
 6. ~~Name/Number search box ➡️ orange magnifier~~
 
-Este proyecto tiene fecha de terminacion para el __26/01/2026__, posteriormente no sera mas actualizado.
+Este proyecto tiene fecha de terminacion para el __27/01/2026__, posteriormente no sera mas actualizado.
 
 ## POKEVIEWER
 
