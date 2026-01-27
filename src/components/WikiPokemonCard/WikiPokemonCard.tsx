@@ -30,9 +30,13 @@ const WikiPokemonCard = (data: PokemonData) => {
         </div>
         <div className={`font-semibold text-xl`}>
           <p className={`ml-2 uppercase font-bold text-2xl tracking-tighter`}>{`${data.name} #${data.id}`}</p>
+
+
           <p className={`mt-2 ml-2 mb-2 text-gray-200`}>
-            {firstGenPokemonList.map(({ name, number, description }) => (<p></p>))}
+            {firstGenPokemonList.find(({ name }) => data.name === name)?.description || "Description not found"}
           </p>
+
+
           <div className={`grid grid-cols-2 w-lg ml-2 my-10`}>
             <p className={`font-normal text-gray-300`}>Height:</p>
             <p className={`font-normal text-gray-300`}>Weight:</p>
