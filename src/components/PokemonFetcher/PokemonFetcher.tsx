@@ -3,7 +3,7 @@ import WikiPokemonCard from "../WikiPokemonCard/WikiPokemonCard"
 
 const pokemonProperties = {
   name: '',
-  id: '',
+  id: 0,
   height: '',
   sprites: { other: { "official-artwork": { front_default: '' } } },
   species: { name: '' },
@@ -57,6 +57,8 @@ const PokemonFetcher = () => {
             weight={properties.weight}
             height={properties.height}
             abilities={properties.abilities[0].ability.name}
+            name={properties.name}
+            id={properties.id}
           />
         </div>
       </div>
