@@ -18,4 +18,4 @@ Este proyecto tiene fecha de terminación para el __xx/xx/2026__, posteriormente
 
 ## POKEVIEWER
 
-Parece que __POKEVIEWER__ está cambiando un poco su target, estoy transformándolo en una especia de POKEDEX en donde cada Pokemón tiene su propio path y propio componente.
+Parece que __POKEVIEWER__ está cambiando un poco su target, estoy transformándolo en una especie de POKEDEX en donde cada Pokemón tiene su propio path y propio componente.

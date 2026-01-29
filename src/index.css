@@ -8,6 +8,9 @@
   --color-tailwindBlue: #101828;
   --color-tailwindBlueNavigation: #172130;
   --color-tailwindBorder: #2F3845;
+  --color-navigationGray: #383838;
+  --color-navigationGrayInactive: #3F3F3F;
+
 
   /* CLASS COLORS */
 
@@ -61,7 +64,24 @@
   /* POKEMON TYPE COLORS ENDS */
 
   --color-pokedexGray: #a4a4a4;
-  }
+  --color-healball1: #806AAC;
+  --color-healball2: #E0B3CE;
+  --color-healball3: #FCF7DD;
+
+  /* NAVIGATION BAR */
+
+  --inset-shadow-nav: inset 10px 0px 10px #0f0f0f;
+  --inset-shadow-md: inset 0 5px 3px #ffffff1c;
+
+  --color-navigationBlackGray: #212121;
+  --color-navigationBody1: #161616;
+  --color-navigationBody2: #1a1a1a;
+  --color-navigationBarBlack: #0f0f0f;
+  --color-navigationBarHoverGray: #949494;
+  --color-navigationBarHoverLightGray: #e9e9e9;
+
+ /* NAVIGATION BAR */
+}
 
 
   /* CUSTOM CSS CLASSES */
@@ -155,9 +175,56 @@
            [clip-path:polygon(50%_0%,100%_0,100%_50%,50%_50%,50%_30%,0_30%,0_0)]
   }
 
+  .hover-navigation-button {
+    @apply hover:bg-linear-to-t from-navigationBarHoverGray to-navigationBarHoverLightGray
+    hover:text-gray-900
+    w-full
+    h-full
+    flex
+    items-center
+    px-2
+    rounded-full
+  }
+
   /* CUSTOM CSS CLASSES ENDS*/
 
 body {
-  background-color: #101828;
-  color: white;
+  height: 100vh;
+  width: 100vw;
+
+  background: black; /* testing purposes */
+
+  /* 1 */
+
+  /* background: #806AAC;
+  background: linear-gradient(45deg,rgba(128, 106, 172, 1) 0%, rgba(252, 247, 221, 1) 50%, rgba(224, 179, 206, 1) 94%); */
+
+  /* 2 */
+
+  /* background: #6E4136;
+  background: linear-gradient(90deg,rgba(110, 65, 54, 1) 42%, rgba(56, 56, 56, 1) 77%); */
+
+  /* 3 */
+
+  /* background: #ECEDF6;
+  background: linear-gradient(45deg,rgba(236, 237, 246, 1) 0%, rgba(245, 185, 215, 1) 33%, rgba(255, 46, 210, 1) 66%, rgba(131, 73, 188, 1) 100%); */
+
+  /* 4 */
+
+  /* background: #ECEDF6;
+  background: linear-gradient(45deg,rgba(236, 237, 246, 1) 0%, rgba(63, 154, 205, 1) 33%, rgba(7, 97, 160, 1) 66%); */
+
+  /* 5 */
+
+  /* background: #ECEDF6;
+  background: linear-gradient(45deg,rgba(236, 237, 246, 1) 0%, rgba(88, 78, 72, 1) 33%, rgba(15, 76, 149, 1) 66%); */
+
+  /* 6 */
+
+  /* background: #FFFFFD;
+  background: linear-gradient(45deg,rgba(255, 255, 253, 1) 0%, rgba(197, 104, 31, 1) 33%); */
+
+
+  background-size: cover;
+  background-position: center;
 }

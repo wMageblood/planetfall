@@ -1,3 +1,3 @@
-const LandPage = () => <p>KORE WA ORE NO RAANDO PEEJI DESU</p>
+const LandPage = () => <p>LandPage Component</p>
 
 export default LandPage
