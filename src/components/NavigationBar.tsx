@@ -3,11 +3,11 @@ function NavigationBar() {
     <nav className={``}>
       <div className={`flex justify-center`}>
         <div className={`bg-linear-to-b from-navigationGrayInactive to-navigationBlackGray w-auto rounded-full h-12 flex items-center p-[3px] inset-shadow-nav`}>
-          <div className={`text-gray-300 font-semibold bg-linear-to-t from-navigationBody1 to-navigationBody2 rounded-full w-full h-full flex items-center p-[3px]`}>
-            <a href="#" className={`hover-navigation-button`}>Projects</a>
-            <a href="#" className={`hover-navigation-button ml-2`}>Gallery</a>
-            <a href="#" className={`hover-navigation-button mx-2`}>Studio</a>
-            <a href="#" className={`hover-navigation-button`}>Profile</a>
+          <div className={`text-gray-300 bg-linear-to-t from-navigationBody1 to-navigationBody2 rounded-full w-full h-full flex items-center p-[3px]`}>
+            <a href="#" className={`hover-navigation-button`}>PokeProj</a>
+            <a href="#" className={`hover-navigation-button ml-2`}>PokeGall</a>
+            <a href="#" className={`hover-navigation-button mx-2`}>PokeStu</a>
+            <a href="#" className={`hover-navigation-button`}>PokeProf</a>
           </div>
         </div>
       </div>
