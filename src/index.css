@@ -71,10 +71,13 @@
 
   /* NAVIGATION BAR */
 
-  --inset-shadow-nav: inset 10px 0px 10px #0f0f0f;
-  --inset-shadow-md: inset 0 5px 3px #ffffff1c;
+  --inset-shadow-nav: inset 10px 0px 10px #1b1b1b;
+  --inset-shadow-md: inset 0px 3px 3px #111111;
+  /* --inset-shadow-md: inset 0 3px 3px #111111; */
 
-  --color-navigationBlackGray: #212121;
+  --color-mainBorder1: #3F3F3F;
+  --color-mainBorder2: #212121;
+
   --color-navigationBody1: #161616;
   --color-navigationBody2: #1a1a1a;
   --color-navigationBarBlack: #0f0f0f;
