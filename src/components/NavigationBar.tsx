@@ -1,14 +1,14 @@
 function NavigationBar() {
   return (
-    <nav className={``}>
+    <nav className={`mt-25 `}>
       <div className={`flex justify-center`}>
         <div className={`bg-linear-to-b from-navigationGrayInactive to-navigationBlackGray w-auto rounded-full h-12 flex items-center p-[3px] inset-shadow-nav`}>
-          <div className={`text-gray bg-linear-to-t from-navigationBody1 to-navigationBody2 rounded-full w-full h-full flex items-center p-[3px]`}>
+          <div className={`text-gray bg-linear-to-t from-navigationBody1 to-navigationBody2 rounded-full w-full h-full flex items-center p-[3px] inset-shadow`}>
             {/* <div className={`text-gray-300 bg-linear-to-t from-navigationBody1 to-navigationBody2 flex items-center w-full h-full p-[3px] rounded-full`}> */}
-            <a href="#" className={`hover-navigation-button`}>PokeProj</a>
-            <a href="#" className={`hover-navigation-button ml-2`}>PokeGall</a>
-            <a href="#" className={`hover-navigation-button mx-2`}>PokeStu</a>
-            <a href="#" className={`hover-navigation-button`}>PokeProf</a>
+            <a href="#" className={`hover-navigation-button`}>Projects</a>
+            <a href="#" className={`hover-navigation-button ml-2`}>Gallery</a>
+            <a href="#" className={`hover-navigation-button mx-2`}>Studio</a>
+            <a href="#" className={`hover-navigation-button`}>Profile</a>
             {/* </div> */}
           </div>
         </div>

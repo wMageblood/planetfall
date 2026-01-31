@@ -1,7 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@500&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75,200;1,75,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@600&display=swap');
 
 @theme {
 
@@ -85,6 +83,7 @@
 
   --font-lexend: "Lexend", sans-serif;
   --font-VendSans: "Vend Sans", sans-serif;
+  --font-Geist: "Geist", sans-serif;
 
  /* NAVIGATION BAR */
 }
@@ -190,9 +189,9 @@
            items-center
            px-5
            rounded-full
-           text-sm
+           text-[15px]
            text-white
-           font-VendSans
+           font-Geist
 
     }
 
@@ -202,7 +201,7 @@ body {
   height: 100vh;
   width: 100vw;
 
-  background: black; /* testing purposes */
+  background: #4d4d4d; /* testing purposes */
 
   /* 1 */
 
