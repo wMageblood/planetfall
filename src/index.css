@@ -195,7 +195,8 @@
            text-[15px]
            text-white
            font-Geist
-
+           transition
+           duration-300
     }
 
   /* CUSTOM CSS CLASSES ENDS*/
