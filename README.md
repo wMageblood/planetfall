@@ -14,7 +14,7 @@ __POKEVIEWER__ fue creado con la intención de aprender a utilizar APIs. Consta 
 9. Asignar rutas que tengan sentido.
 10. Recrear el componente llamado "elemento1".
 
-Este proyecto tiene fecha de terminación para el __09/02/2026__, posteriormente no sera más actualizado.
+Este proyecto tiene fecha de terminación para el __10/02/2026__, posteriormente no sera más actualizado.
 
 ## POKEVIEWER
 
