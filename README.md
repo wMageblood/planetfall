@@ -10,9 +10,10 @@ __POKEVIEWER__ fue creado con la intención de aprender a utilizar APIs. Consta 
 5. ~~Crear rutas para cada componente.~~
 6. ~~Name/Number search box ➡️ orange magnifier.~~
 7. Land Page.
-8. Renombrar componentes a algo que tenga sentido.
-9. Asignar rutas que tengan sentido.
+8. ~~Renombrar componentes a algo que tenga sentido~~. 1/4
+9. Asignar rutas que tengan sentido. 1/4
 10. Recrear el componente llamado "elemento1".
+11. Arreglar search/:pokemonName.
 
 Este proyecto tiene fecha de terminación para el __10/02/2026__, posteriormente no sera más actualizado.
 

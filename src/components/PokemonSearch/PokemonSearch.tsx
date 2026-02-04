@@ -1,13 +1,13 @@
 import { useRef } from "react"
 import firstGenPokemonList from "../../constants/firstGenPokemonsList"
 
-const ElementoDos = () => {
+const PokemonSearch = () => {
 
   const inputValue = useRef<HTMLInputElement | any>(null)
 
   const handleClick = () => {
     const selectedPokemon = inputValue.current.value
-    window.location.href = `elemento2/${selectedPokemon}`
+    window.location.href = `/${selectedPokemon}`
   }
 
   return (
@@ -25,4 +25,4 @@ const ElementoDos = () => {
   )
 }
 
-export default ElementoDos
+export default PokemonSearch

@@ -40,8 +40,14 @@ const PokemonDetail = () => {
   }, [pokemonName]);
 
 
+  //fetch current pokemon, then handleClick function using ID + 1 or ID - 1
+
   return (
-    <div>
+    <div className={`mt-4`}>
+      <div className={`flex space-x-2 mx-4 *:h-10 *:rounded-sm *:w-1/2 *:font-Geist *:tracking-tighter`}>
+        <button className={`bg-blue-500`}>« PREVIOUS</button>
+        <button className={`bg-green-500`}>NEXT »</button>
+      </div>
       <WikiPokemonCard
         id={properties.id}
         name={properties.name}

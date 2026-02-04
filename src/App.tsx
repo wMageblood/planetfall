@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import NavigationBar from "./components/NavigationBar"
 import pathRoutes from "./constants/routes"
+import NewNavigationBar from "./components/NewNavigationBar/NewNavigationBar"
 
 
 function App() {
   return (
     <div className="">
       <BrowserRouter>
-        <NavigationBar />
+        <NewNavigationBar />
         <Routes>
           {pathRoutes.map(({ path, element: Element }) => (<Route path={path} element={<Element />} />))}
         </Routes>
