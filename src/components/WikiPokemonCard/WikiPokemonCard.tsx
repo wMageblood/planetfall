@@ -27,10 +27,57 @@ const WikiPokemonCard = (data: PokemonData) => {
     return pokemon ? pokemon[key as keyof typeof pokemon] : null;
   }
 
+  const handleClickBlue = () => console.log("CLICKED BLUE")
+  const handleClickRed = () => console.log("CLICKED RED")
+
   return (
-    <div>
-      <div>
-        <img src={`${data.sprite}`} />
+    <div className={`mt-15 mx-4`}>
+      <div className={`flex justify-center`}>
+        <img className={`bg-neutral-500 rounded-sm max-h-100 max-w-100`} height={`400`} width={`400`} src={`${data.sprite}`} />
+        <div className={`ml-5 w-100 h-auto font-Geist`}>
+          <p>{valueFetcher('description')}</p>
+          <p className={`my-5`}>
+            Versions:
+            {<button onClick={handleClickBlue} className={`bg-blue-400 mx-2 px-2 py-1 rounded-full`}>BLUE</button>}
+            {<button onClick={handleClickRed} className={`bg-red-400 px-2 py-1 rounded-full`}>RED</button>}
+          </p>
+          <div className={`px-3 bg- rounded-lg py-4 bg-neutral-500`}>
+            <div className={`flex justify-between pr-10 mb-5`}>
+              <div>
+                <p className={`text-gray-300`}>Height</p>
+                <p>{`${data.height / 10}m (${heightConverter(data.height)} ft)`}</p>
+              </div>
+              <div>
+                <p className={`text-gray-300`}>Weight</p>
+                <p>{`${data.weight / 10}kg (${weightConverter(data.weight)} lbs)`}</p>
+              </div>
+            </div>
+            <div className={`flex justify-between pr-10 mb-5`}>
+              <div>
+                <p className={`text-gray-300`}>Category</p>
+                <p>{valueFetcher('category')}</p>
+              </div>
+              <div>
+                <p className={`text-gray-300`}>Abilities</p>
+                <p>{upperCaseFirstLetter(data.abilities)}</p>
+              </div>
+            </div>
+            <div className={`flex justify-between pr-10`}>
+              <div>
+                <p className={`text-gray-300`}>Gender</p>
+                <p>{valueFetcher('gender')}</p>
+              </div>
+            </div>
+          </div>
+          <div className={`mt-4`}>
+            <h1>Type</h1>
+            <button className={`${backGroundColor(data.type)} w-30 px-6 py-1 rounded text-white mt-2`}>{upperCaseFirstLetter(data.type)}</button>
+          </div>
+          <div className={`mt-4`}>
+            <h1>Weaknesses</h1>
+            {pokemonWeaknessesTwo(data.type).map((x, key) => <button key={key} className={`${backGroundColor(x)} w-30 px-6 mt-2 mr-2 py-1 rounded-sm`}>{upperCaseFirstLetter(x)}</button>)}
+          </div>
+        </div>
       </div>
     </div>
 

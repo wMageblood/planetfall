@@ -5,7 +5,7 @@ const firstGenPokemonList = [
   { name: 'Charmander', number: 4, description: 'Fire-type lizard with flame on tail', gender: 'Male & Female', category: 'Lizard' },
   { name: 'Charmeleon', number: 5, description: 'Red dragon-like creature with horns', gender: 'Male & Female', category: 'Flame' },
   { name: 'Charizard', number: 6, description: 'Orange dragon with blue wings', gender: 'Male & Female', category: 'Flame' },
-  { name: 'Squirtle', number: 7, description: 'Blue turtle with brown shell', gender: 'Male & Female', category: 'Tiny Turtle' },
+  { name: 'Squirtle', number: 7, description: 'After birth, its back swells and hardens into a shell. It sprays a potent foam from its mouth.', gender: 'Male & Female', category: 'Tiny Turtle' },
   { name: 'Wartortle', number: 8, description: 'Blue creature with fuzzy ears', gender: 'Male & Female', category: 'Turtle' },
   { name: 'Blastoise', number: 9, description: 'Armored water turtle with cannons', gender: 'Male & Female', category: 'Shellfish' },
   { name: 'Caterpie', number: 10, description: 'Green caterpillar with yellow antenna', gender: 'Male & Female', category: 'Worm' },
