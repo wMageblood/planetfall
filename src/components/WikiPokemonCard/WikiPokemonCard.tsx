@@ -27,11 +27,14 @@ const WikiPokemonCard = (data: PokemonData) => {
     return pokemon ? pokemon[key as keyof typeof pokemon] : null;
   }
 
-  const handleClickBlue = () => console.log("CLICKED BLUE")
+  const handleClickBlue = (id: number) => console.log("CLICKED BLUE")
   const handleClickRed = () => console.log("CLICKED RED")
 
   return (
-    <div className={`mt-15 mx-4`}>
+    <div className={`mt-5 mx-4`}>
+
+      <h1 className={`text-center mb-5 text-4xl font-Geist tracking-tighter`}>{`${upperCaseFirstLetter(data.name)} `}<span className={`text-gray-700 tracking-normal`}>#{data.id}</span></h1>
+
       <div className={`flex justify-center`}>
         <img className={`bg-neutral-500 rounded-sm max-h-100 max-w-100`} height={`400`} width={`400`} src={`${data.sprite}`} />
         <div className={`ml-5 w-100 h-auto font-Geist`}>
