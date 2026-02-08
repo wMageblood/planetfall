@@ -47,7 +47,7 @@ const PokemonDetail = () => {
   }
 
   const fetchNextPokemon = (key: string) => {
-    const findNextPokemon = firstGenPokemonList.find(({ number }) => number === properties.id + 1)
+    const findNextPokemon = firstGenPokemonList.find(({ number }) => number === properties.id + 2)
     return findNextPokemon ? findNextPokemon[key as keyof typeof findNextPokemon] : null;
   }
 
